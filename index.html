@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "/css/index.css"/>
     <title>Document</title>
 </head>
 <body>
-    <p>first commit test</p>
-    <p>teset</p>
+    <h4>table 실습</h4>
+    <table border = "1" bordercolor = 'red'>
+        <caption>span 실습화면</caption>
+        <tr>
+            <td colspan="4">열 합치기 실습....................................</td>
+        </tr>
+        <tr>
+            <td rowspan="3" align="center">...</td>
+            <td rowspan ="2" colspan="2">...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <h4>form 태그 실습</h4>
+    <h4>HTML Forms</h4>
+    <form action = "./action_page.html">
+        <label>First name : </label> <br>
+        <input type ='text' name = "fname" value="Jung"><br><!-- name 속성 나중에 서버로 갈 때 식별자 역할-->
+        <label>Last Name : </label><br>
+        <input type = 'text' name = "lname" value = "Jiwon"><br>
+        <br>
+        <p>체크박스 실습 확인하기~</p>
+        <input type = 'checkbox' name = 'veh1' value = "Bike" checked> <!-- checked 속성 미리 체크 해놓고 시작하고 싶을 때--> 
+        <label for ="veh1">자전거</label>
+        <input type = 'checkbox' name = 'veh2' value = "Car"> 
+        <label for ="veh2">자동차</label>
+        <input type = 'checkbox' name = 'veh3' value = "Bus"> 
+        <label for ="veh3">버스</label>
+        <p>라디오버튼 실습 확인하기~</p>
+        <input type = 'radio' name = 'rveh1' value = "Bike" checked> <!-- checked 속성 미리 체크 해놓고 시작하고 싶을 때--> 
+        <label for ="rveh1">자전거</label>
+        <input type = 'radio' name = 'rveh1' value = "Car"> 
+        <label for ="rveh2">자동차</label>
+        <input type = 'radio' name = 'rveh1' value = "Bus"> 
+        <label for ="rveh3">버스</label>
+        <br>
+        <input type = 'submit' value = 'SUBMIT'>
+        <p>버튼을 누르면 action_page.html로 이동합니다.</p>
+    </form>
+    <hr>
 </body>
 </html>
